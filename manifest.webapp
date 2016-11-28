@@ -1,0 +1,17 @@
+{
+  "version": "0..0",
+  "name": "easy 𝓐𝕭𝙲",
+  "description": "A simple unicode text converter app",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/icon16x16.png",
+    "48": "/img/icons/icon48x48.png",
+    "60": "/img/icons/icon60x60.png",
+    "128": "/img/icons/icon128x128.png"
+  },
+  "developer": {
+    "name": "Frederik Braun",
+    "url": "https://frederik-braun.com"
+  },
+  "orientation": "portrait"
+}
