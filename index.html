@@ -75,21 +75,22 @@ function convertChar(c, i) {
   }
   let charCode = c.charCodeAt(0);
   if (c.match(/[a-z]+/)) {
-    // lower
     if (i >= lower.length) {
       // fallback to uppercase if no possible lowercase conversion
       return convertChar(c.toUpperCase(), i);
     }
-    let idx = charCode-97;
-    if (lower[i].length == 26) { return lower[i][idx]; }
-    if (lower[i].length == 52) { return lower[i].slice(idx*2, (idx*2)+2); }    
+    let table = lower;
+    let offset = 97;
+
   } else {
-    // upper
-    if (i >= upper.length) { return c }
-    let idx = charCode-65;    
-    if (upper[i].length == 26) { return upper[i][idx]; }
-    if (upper[i].length == 52) { return upper[i].slice(idx*2, (idx*2)+2); }    
-  }   
+    let table = upper;
+    if (i >= table.length) { return c } // char not in table, fallback
+    let offset = 65;
+  }
+  let idx = charCode-offset;
+  // there is 1 or 2 characters per glyph
+  if (table[i].length == 26) { return table[i][idx]; }
+  if (table[i].length == 52) { return table[i].slice(idx*2, (idx*2)+2); }
 }
 
 function convert(inputText, i) {
