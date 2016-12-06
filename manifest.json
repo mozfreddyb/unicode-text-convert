@@ -1,0 +1,35 @@
+{
+  "version": "0.8.0",
+  "name": "easy ABC",
+  "shortname": "easy 𝓐𝕭𝙲",
+  "description": "A simple unicode text converter app",
+  "icons": [{
+    "src": "img/icon128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "img/icon144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "img/icon152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "img/icon192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "img/icon256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }],
+  "developer": {
+    "name": "Frederik Braun",
+    "url": "https://frederik-braun.com"
+  },
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+}

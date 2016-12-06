@@ -1,12 +1,13 @@
 {
-  "version": "0..0",
+  "version": "0.9.0",
   "name": "easy 𝓐𝕭𝙲",
   "description": "A simple unicode text converter app",
   "launch_path": "index.html",
   "icons": {
     "16": "img/icon16x16.png",
-    "180": "img/icon180x180.png"
-    "196": "img/icon196x196.png"
+    "180": "img/icon180x180.png",
+    "180": "img/icon180x180.png",
+    "196": "img/icon196x196.png",
     "256": "img/icon256x256.png"
   },
   "developer": {

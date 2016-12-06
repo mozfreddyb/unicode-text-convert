@@ -1,14 +1,28 @@
 <!doctype html>
 <html><head>
-  <title>easy 𝓐𝕭𝙲 — A simple unicode text converter app</title>
+  <title>easy ABC — A simple unicode text converter app</title>
   <meta charset="utf-8">
   <!-- font-size increases with window -->
   <style>* { font-size: 2.5vh; }</style>
 
+  <!-- app-like things -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="img/icon196x196.png">
-  <link rel="apple-touch-icon" href="img/icon180x180.png">
-  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="manifest" href="manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="easy ABC">
+  <link rel="apple-touch-icon" href="img/icon152x152.png">
+
+  <!-- windows tile icon -->
+  <meta name="msapplication-TileImage" content="imgicon144x144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+
+  <!-- old-school favicon last, or maybe even remove? -->
+  <link rel="shortcut icon" href="favicon.ico">
 </head><body>
 
   <input id="inp" type="text" autofocus
