@@ -106,3 +106,11 @@ document.getElementById("inp").addEventListener('keyup', function handleKey(even
 });
 // keep p elements in variable for easier access and to save a DOM read
 let paragraphs = document.querySelectorAll("p.paragraph");
+
+
+//////////////////// app works now. initialize service worker  ////////////////
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('./service-worker.js')
+           .then(function() { console.log("SW registered"); })
+}
