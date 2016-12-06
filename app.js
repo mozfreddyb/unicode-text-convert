@@ -107,6 +107,8 @@ document.getElementById("inp").addEventListener('keyup', function handleKey(even
 // keep p elements in variable for easier access and to save a DOM read
 let paragraphs = document.querySelectorAll("p.paragraph");
 
+var loader = document.querySelector("p.loader");
+loader.style.display = "none";
 
 //////////////////// app works now. initialize service worker  ////////////////
 if ('serviceWorker' in navigator) {
