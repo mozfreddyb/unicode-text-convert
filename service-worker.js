@@ -1,4 +1,4 @@
-var cacheName = 'easy-ABC-v0.8.0';
+var cacheName = 'easy-ABC-v0.9.0';
 
 var filesToCache = [
   'index.html',
