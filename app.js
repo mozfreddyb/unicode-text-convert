@@ -1,3 +1,4 @@
+"use strict";
 //////////////////// constant definitions //////////////////////////////
 
 let lower = `ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ
@@ -79,7 +80,8 @@ function convertChar(c, i) {
 
 function convert(inputText, i) {
   let output = '';
-  for (let letter of Array.from(inputText)) {
+  for (let n=0; n < inputText.length; n++) {
+    let letter = inputText.charAt(n);
     output += convertChar(letter, i);
      // insert zero-width space to prevent country flag ligatures
      // (e.g., [F][R] would become the French flag)
